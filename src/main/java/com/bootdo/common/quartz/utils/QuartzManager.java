@@ -3,6 +3,7 @@ package com.bootdo.common.quartz.utils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+
 import org.apache.log4j.Logger;
 import org.quartz.CronScheduleBuilder;
 import org.quartz.CronTrigger;
@@ -20,14 +21,9 @@ import org.quartz.TriggerBuilder;
 import org.quartz.TriggerKey;
 import org.quartz.impl.matchers.GroupMatcher;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 import org.springframework.stereotype.Service;
-import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
-import com.bootdo.common.domain.ScheduleJob;
-import com.bootdo.common.quartz.factory.*;
-import com.bootdo.common.utils.SpringContextHolder;;
+import com.bootdo.common.domain.ScheduleJob;;
 
 /**
  * 
